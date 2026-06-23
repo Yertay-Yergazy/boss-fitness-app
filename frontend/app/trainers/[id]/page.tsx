@@ -7,6 +7,8 @@ import { ApiError } from "@/lib/api/client";
 import { getTrainer } from "@/lib/api/trainers";
 import styles from "./page.module.css";
 
+export const dynamic = "force-dynamic";
+
 interface PageProps {
   params: Promise<{ id: string }>;
 }

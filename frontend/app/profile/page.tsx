@@ -5,6 +5,8 @@ import { getProfile } from "@/lib/api/profile";
 import { getSubscription } from "@/lib/api/subscription";
 import styles from "./page.module.css";
 
+export const dynamic = "force-dynamic";
+
 export default async function ProfilePage() {
   const [profile, subscription] = await Promise.all([getProfile(), getSubscription()]);
 

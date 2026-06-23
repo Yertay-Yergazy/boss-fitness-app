@@ -7,6 +7,10 @@ import { getSubscription } from "@/lib/api/subscription";
 import { getSessions } from "@/lib/api/sessions";
 import styles from "./page.module.css";
 
+// Страница всегда зависит от живого бекенда — запрещаем Next.js пытаться
+// пререндерить её во время `next build` (там бекенда ещё нет/недоступен).
+export const dynamic = "force-dynamic";
+
 const QUICK_ACTIONS = [
   { href: "/trainers", label: "Записаться\nк тренеру", gold: true, icon: "book" as const },
   { href: "/history", label: "Мои\nзанятия", gold: false, icon: "list" as const },

@@ -3,6 +3,8 @@ import { TabBar, TrainerCard } from "@/components/features";
 import { listTrainers } from "@/lib/api/trainers";
 import styles from "./page.module.css";
 
+export const dynamic = "force-dynamic";
+
 export default async function TrainersPage() {
   const trainers = await listTrainers();
 

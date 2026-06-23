@@ -4,6 +4,8 @@ import { BackButton } from "@/components/features";
 import { listPlans } from "@/lib/api/plans";
 import styles from "./page.module.css";
 
+export const dynamic = "force-dynamic";
+
 const PLAN_COLOR: Record<string, string> = {
   p12: "#C9A227",
   unlimited: "#F5D77A",

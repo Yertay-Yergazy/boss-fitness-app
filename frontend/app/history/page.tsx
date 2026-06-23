@@ -3,6 +3,8 @@ import { getSessions } from "@/lib/api/sessions";
 import type { SessionType } from "@/lib/api/types";
 import styles from "./page.module.css";
 
+export const dynamic = "force-dynamic";
+
 const TYPE_LABEL: Record<SessionType, string> = {
   self: "САМОСТ.",
   group: "ГРУПП.",
