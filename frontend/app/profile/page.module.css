@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-5);
+}
+
+.name {
+  font-family: var(--font-display), "Impact", sans-serif;
+  font-size: var(--font-size-xl);
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--color-text-primary);
+  margin-top: var(--space-3);
+  margin-bottom: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+.phone {
+  font-family: var(--font-heading), sans-serif;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  position: relative;
+  z-index: 1;
+}
+
+.planCard {
+  background: var(--gradient-surface);
+  border: 1px solid var(--color-border-gold);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.planLabel {
+  font-family: var(--font-heading), sans-serif;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+.planName {
+  font-family: var(--font-display), "Impact", sans-serif;
+  font-size: var(--font-size-lg);
+  letter-spacing: var(--letter-spacing-wide);
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-2);
+}
+
+.planDate {
+  font-family: var(--font-heading), sans-serif;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.planDateValue {
+  color: var(--color-text-gold-light);
+  font-weight: var(--font-weight-bold);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}

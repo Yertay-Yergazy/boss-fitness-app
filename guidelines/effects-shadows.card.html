@@ -1,0 +1,39 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Glow Effects" subtitle="Gold and red glow shadow system — xs through lg" -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { margin:0; background:#0A0A0A; padding:20px 24px; }
+    .row { display:flex; gap:16px; }
+    .item { flex:1; display:flex; flex-direction:column; gap:10px; }
+    .demo { height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; background:#1A1A1A; border:1px solid; }
+    .lbl { font-family:'Montserrat',sans-serif; font-size:9px; color:#555; letter-spacing:0.08em; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="item">
+      <div class="demo" style="border-color:rgba(201,162,39,0.3);box-shadow:0 0 6px rgba(201,162,39,0.25);color:#C9A227">gold-xs</div>
+      <div class="lbl">--shadow-gold-xs</div>
+    </div>
+    <div class="item">
+      <div class="demo" style="border-color:rgba(201,162,39,0.5);box-shadow:0 0 12px rgba(201,162,39,0.35);color:#C9A227">gold-sm</div>
+      <div class="lbl">--shadow-gold-sm</div>
+    </div>
+    <div class="item">
+      <div class="demo" style="border-color:rgba(201,162,39,0.7);box-shadow:0 0 20px rgba(201,162,39,0.42),0 0 40px rgba(201,162,39,0.15);color:#F5D77A">gold-md</div>
+      <div class="lbl">--shadow-gold-md</div>
+    </div>
+    <div class="item">
+      <div class="demo" style="border-color:rgba(201,162,39,0.9);box-shadow:0 0 30px rgba(201,162,39,0.55),0 0 60px rgba(201,162,39,0.25);color:#F5D77A">gold-lg</div>
+      <div class="lbl">--shadow-gold-lg</div>
+    </div>
+    <div class="item">
+      <div class="demo" style="border-color:rgba(227,36,43,0.5);box-shadow:0 0 20px rgba(227,36,43,0.45),0 0 40px rgba(227,36,43,0.2);color:#E3242B">red-md</div>
+      <div class="lbl">--shadow-red-md</div>
+    </div>
+  </div>
+</body>
+</html>

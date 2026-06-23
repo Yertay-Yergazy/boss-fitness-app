@@ -1,0 +1,209 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/core/**",
+              "components/subscription/**",
+              "components/trainers/**",
+              "ui_kits/mobile_app/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Anton|Montserrat))/i]",
+        "message": "Font not provided by the design system. Available: Anton, Montserrat."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Avatar'] > JSXAttribute > JSXIdentifier[name!=/^(?:src|name|size|border|style|key|ref|className|style|children)$/]",
+        "message": "<Avatar> doesn't accept that prop. Declared props: src, name, size, border, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Avatar'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:xs|sm|md|lg|xl|2xl)$/]",
+        "message": "<Avatar> size must be one of 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Avatar'] > JSXAttribute[name.name='border'] > Literal[value!=/^(?:gold|strong|white|none)$/]",
+        "message": "<Avatar> border must be one of 'gold' | 'strong' | 'white' | 'none'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Badge'] > JSXAttribute > JSXIdentifier[name!=/^(?:status|size|dot|children|style|key|ref|className|style|children)$/]",
+        "message": "<Badge> doesn't accept that prop. Declared props: status, size, dot, children, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Badge'] > JSXAttribute[name.name='status'] > Literal[value!=/^(?:active|expiring|expired|inactive|success|info)$/]",
+        "message": "<Badge> status must be one of 'active' | 'expiring' | 'expired' | 'inactive' | 'success' | 'info'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Badge'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:sm|md|lg)$/]",
+        "message": "<Badge> size must be one of 'sm' | 'md' | 'lg'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|fullWidth|disabled|icon|children|onClick|style|key|ref|className|style|children)$/]",
+        "message": "<Button> doesn't accept that prop. Declared props: variant, size, fullWidth, disabled, icon, children, onClick, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:primary|secondary|danger|ghost)$/]",
+        "message": "<Button> variant must be one of 'primary' | 'secondary' | 'danger' | 'ghost'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:sm|md|lg)$/]",
+        "message": "<Button> size must be one of 'sm' | 'md' | 'lg'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Card'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|padding|goldAccent|interactive|children|onClick|style|key|ref|className|style|children)$/]",
+        "message": "<Card> doesn't accept that prop. Declared props: variant, padding, goldAccent, interactive, children, onClick, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Card'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:default|elevated|hero|danger|subtle)$/]",
+        "message": "<Card> variant must be one of 'default' | 'elevated' | 'hero' | 'danger' | 'subtle'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Card'] > JSXAttribute[name.name='padding'] > Literal[value!=/^(?:none|sm|md|lg|xl)$/]",
+        "message": "<Card> padding must be one of 'none' | 'sm' | 'md' | 'lg' | 'xl'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='KeyBadge'] > JSXAttribute > JSXIdentifier[name!=/^(?:number|state|onClick|style|key|ref|className|style|children)$/]",
+        "message": "<KeyBadge> doesn't accept that prop. Declared props: number, state, onClick, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='KeyBadge'] > JSXAttribute[name.name='state'] > Literal[value!=/^(?:free|taken|selected)$/]",
+        "message": "<KeyBadge> state must be one of 'free' | 'taken' | 'selected'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ProgressBar'] > JSXAttribute > JSXIdentifier[name!=/^(?:current|total|showLabel|style|key|ref|className|style|children)$/]",
+        "message": "<ProgressBar> doesn't accept that prop. Declared props: current, total, showLabel, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SubscriptionCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:type|status|planName|dateTo|sessionsUsed|sessionsTotal|clientName|clientId|showQR|onRenew|style|key|ref|className|style|children)$/]",
+        "message": "<SubscriptionCard> doesn't accept that prop. Declared props: type, status, planName, dateTo, sessionsUsed, sessionsTotal, clientName, clientId, showQR, onRenew, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SubscriptionCard'] > JSXAttribute[name.name='type'] > Literal[value!=/^(?:unlimited|limited|single)$/]",
+        "message": "<SubscriptionCard> type must be one of 'unlimited' | 'limited' | 'single'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SubscriptionCard'] > JSXAttribute[name.name='status'] > Literal[value!=/^(?:active|expiring|expired)$/]",
+        "message": "<SubscriptionCard> status must be one of 'active' | 'expiring' | 'expired'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='TrainerCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|specialty|rating|imageSrc|variant|onClick|style|key|ref|className|style|children)$/]",
+        "message": "<TrainerCard> doesn't accept that prop. Declared props: name, specialty, rating, imageSrc, variant, onClick, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='TrainerCard'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:list|grid)$/]",
+        "message": "<TrainerCard> variant must be one of 'list' | 'grid'."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "Avatar": {
+        "replaces": []
+      },
+      "Badge": {
+        "replaces": []
+      },
+      "Button": {
+        "replaces": []
+      },
+      "Card": {
+        "replaces": []
+      },
+      "KeyBadge": {
+        "replaces": []
+      },
+      "ProgressBar": {
+        "replaces": []
+      },
+      "SubscriptionCard": {
+        "replaces": []
+      },
+      "TrainerCard": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--color-dark-bg",
+      "--color-dark-card",
+      "--color-gold-gradient",
+      "--color-gold-light",
+      "--color-gold-primary",
+      "--color-red-accent",
+      "--color-text-primary",
+      "--color-text-secondary",
+      "--font-body",
+      "--font-display",
+      "--shadow-lg",
+      "--shadow-md",
+      "--shadow-sm",
+      "--space-2xl",
+      "--space-lg",
+      "--space-md",
+      "--space-sm",
+      "--space-xl",
+      "--space-xs"
+    ],
+    "tokenKinds": {
+      "--color-dark-bg": "color",
+      "--color-dark-card": "color",
+      "--color-gold-primary": "color",
+      "--color-gold-light": "color",
+      "--color-gold-gradient": "color",
+      "--color-red-accent": "color",
+      "--color-text-primary": "font",
+      "--color-text-secondary": "font",
+      "--font-display": "font",
+      "--font-body": "font",
+      "--space-xs": "spacing",
+      "--space-sm": "spacing",
+      "--space-md": "spacing",
+      "--space-lg": "spacing",
+      "--space-xl": "spacing",
+      "--space-2xl": "spacing",
+      "--shadow-sm": "shadow",
+      "--shadow-md": "shadow",
+      "--shadow-lg": "shadow"
+    },
+    "fontFamilies": [
+      "Anton",
+      "Montserrat"
+    ]
+  }
+}

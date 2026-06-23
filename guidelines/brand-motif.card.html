@@ -1,0 +1,42 @@
+<!-- @dsCard group="Brand" viewport="700x200" name="Gold Arc Motif" subtitle="Decorative circular arcs — hero sections, splash screen, profile header" -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { margin:0; background:#0A0A0A; padding:0; display:grid; grid-template-columns:1fr 1fr 1fr; height:200px; }
+    .cell { position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; border-right:1px solid rgba(255,255,255,0.06); }
+    .label { font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; color:#555; letter-spacing:0.1em; text-transform:uppercase; position:relative; z-index:1; }
+  </style>
+</head>
+<body>
+  <div class="cell">
+    <svg style="position:absolute;opacity:0.35" width="240" height="240" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#C9A227" stroke-width="1.5" stroke-dasharray="8 5"/>
+      <circle cx="120" cy="120" r="78"  fill="none" stroke="#F5D77A" stroke-width="1"   stroke-dasharray="4 8"/>
+      <circle cx="120" cy="120" r="120" fill="none" stroke="#C9A227" stroke-width="0.75" stroke-dasharray="12 4"/>
+      <path d="M 30 120 A 90 90 0 0 1 120 30" fill="none" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <span class="label">Яркий (0.35)</span>
+  </div>
+  <div class="cell">
+    <svg style="position:absolute;opacity:0.15" width="240" height="240" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#C9A227" stroke-width="1.5" stroke-dasharray="8 5"/>
+      <circle cx="120" cy="120" r="78"  fill="none" stroke="#F5D77A" stroke-width="1"   stroke-dasharray="4 8"/>
+      <circle cx="120" cy="120" r="120" fill="none" stroke="#C9A227" stroke-width="0.75" stroke-dasharray="12 4"/>
+      <path d="M 30 120 A 90 90 0 0 1 120 30" fill="none" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <span class="label">Стандарт (0.15)</span>
+  </div>
+  <div class="cell" style="border-right:none">
+    <svg style="position:absolute;opacity:0.06" width="240" height="240" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#C9A227" stroke-width="1.5" stroke-dasharray="8 5"/>
+      <circle cx="120" cy="120" r="78"  fill="none" stroke="#F5D77A" stroke-width="1"   stroke-dasharray="4 8"/>
+      <circle cx="120" cy="120" r="120" fill="none" stroke="#C9A227" stroke-width="0.75" stroke-dasharray="12 4"/>
+      <path d="M 30 120 A 90 90 0 0 1 120 30" fill="none" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <span class="label">Тонкий (0.06)</span>
+  </div>
+</body>
+</html>

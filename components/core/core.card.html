@@ -1,0 +1,87 @@
+<!-- @dsCard group="Components" viewport="700x560" name="Core Components" subtitle="Button · Badge · ProgressBar · Avatar · KeyBadge" -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <style>
+    body { margin:0; background:#0A0A0A; padding:20px; }
+    .sec { margin-bottom:22px; }
+    .lbl { font-family:'Montserrat',sans-serif; font-size:9px; font-weight:700; color:#444; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:10px; }
+    .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { Button, Badge, ProgressBar, Avatar, KeyBadge } = window.BOSSFITNESSDesignSystem_d95146;
+    const [sel, setSel] = React.useState(14);
+
+    function Demo() {
+      const [k, setK] = React.useState(14);
+      return (
+        <div>
+          <div className="sec">
+            <div className="lbl">Button — variants &amp; sizes</div>
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr 1fr',gap:'8px',marginBottom:8}}>
+              <Button variant="primary"   size="sm">PRIMARY</Button>
+              <Button variant="secondary" size="sm">SECONDARY</Button>
+              <Button variant="danger"    size="sm">DANGER</Button>
+              <Button variant="ghost"     size="sm">GHOST</Button>
+              <Button variant="primary"   size="md">ЗАПИСАТЬСЯ</Button>
+              <Button variant="secondary" size="md">ПОДРОБНЕЕ</Button>
+              <Button variant="primary"   size="md" disabled>DISABLED</Button>
+              <Button variant="secondary" size="md" disabled>DISABLED</Button>
+            </div>
+          </div>
+          <div className="sec">
+            <div className="lbl">Badge — status variants</div>
+            <div className="row">
+              <Badge status="active">АКТИВЕН</Badge>
+              <Badge status="expiring">ИСТЕКАЕТ</Badge>
+              <Badge status="expired">ПРОСРОЧЕН</Badge>
+              <Badge status="inactive">НЕАКТИВНО</Badge>
+              <Badge status="success" size="lg">УСПЕХ</Badge>
+              <Badge status="active" dot={false} size="sm">без точки</Badge>
+            </div>
+          </div>
+          <div className="sec">
+            <div className="lbl">ProgressBar — urgency states</div>
+            <div style={{display:'flex',flexDirection:'column',gap:10}}>
+              <ProgressBar current={3}  total={12} />
+              <ProgressBar current={8}  total={12} />
+              <ProgressBar current={10} total={12} />
+              <ProgressBar current={12} total={12} />
+            </div>
+          </div>
+          <div className="sec">
+            <div className="lbl">Avatar — sizes &amp; borders</div>
+            <div className="row">
+              <Avatar name="АИ" size="xs" />
+              <Avatar name="Дмитрий Волков" size="sm" />
+              <Avatar name="АК" size="md" border="strong" />
+              <Avatar name="Boss" size="lg" />
+              <Avatar src="../../assets/coach-1.png" name="Дмитрий" size="xl" border="strong" />
+            </div>
+          </div>
+          <div className="sec">
+            <div className="lbl">KeyBadge — locker selector (tap to select)</div>
+            <div style={{display:'grid',gridTemplateColumns:'repeat(10,52px)',gap:8}}>
+              {Array.from({length:20},(_,i)=>i+1).map(n=>(
+                <KeyBadge key={n} number={n}
+                  state={n===k?'selected':[3,7,11,15].includes(n)?'taken':'free'}
+                  onClick={()=>setK(n)} />
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+  </script>
+</body>
+</html>

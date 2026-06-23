@@ -1,0 +1,33 @@
+.badge {
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading), sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.free {
+  background: transparent;
+  border: 1.5px solid var(--color-border-gold-strong);
+  color: var(--color-text-gold);
+  cursor: pointer;
+}
+
+.taken {
+  background: rgba(28, 28, 28, 0.8);
+  border: 1.5px solid rgba(50, 50, 50, 0.5);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+.selected {
+  background: var(--gradient-gold);
+  border: 1.5px solid var(--color-gold-200);
+  color: var(--color-bg-base);
+  box-shadow: var(--shadow-gold-sm);
+  transform: scale(1.1);
+}

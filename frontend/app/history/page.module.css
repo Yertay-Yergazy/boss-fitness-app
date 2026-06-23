@@ -1,0 +1,85 @@
+.counter {
+  font-family: var(--font-heading), sans-serif;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.counterValue {
+  color: var(--color-text-gold-light);
+  font-weight: var(--font-weight-bold);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 12px 14px;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-gold);
+  border-radius: var(--radius-md);
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(201, 162, 39, 0.1);
+  border: 1.5px solid var(--color-border-gold-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.dateTime {
+  font-family: var(--font-heading), sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-bottom: 1px;
+}
+
+.trainerOrSelf {
+  font-family: var(--font-heading), sans-serif;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.typeLabel {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 9px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.typeLabelSelf {
+  color: var(--color-text-muted);
+}
+.typeLabelOther {
+  color: var(--color-text-gold-light);
+}
+
+.lockerLabel {
+  font-family: var(--font-heading), sans-serif;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-disabled);
+}

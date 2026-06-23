@@ -1,0 +1,49 @@
+/* ============================================================
+   BOSS FITNESS — Color Tokens
+   Premium black/gold gym app color system
+   ============================================================ */
+
+:root {
+  /* === BACKGROUNDS — near-black dark surface hierarchy === */
+  --color-bg-base:      #0A0A0A;
+  --color-bg-elevated:  #121212;
+  --color-bg-surface:   #1A1A1A;
+  --color-bg-surface-2: #222222;
+  --color-bg-input:     #1E1E1E;
+  --color-bg-overlay:   rgba(10, 10, 10, 0.95);
+
+  /* === GOLD — Primary metallic accent, 7-step scale === */
+  --color-gold-100: #FFF8DC;
+  --color-gold-200: #F5D77A;
+  --color-gold-300: #E8C255;
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #C9A227;   /* base */
+  --color-gold-600: #B8911E;
+  --color-gold-700: #9A7818;
+
+  /* === RED — Secondary accent: errors, urgent status === */
+  --color-red-400: #F04040;
+  --color-red-500: #E3242B;    /* base */
+  --color-red-600: #D42020;
+  --color-red-700: #C81E1E;
+
+  /* === TEXT === */
+  --color-text-primary:    #FFFFFF;
+  --color-text-secondary:  #E8E8E8;
+  --color-text-muted:      #9A9A9A;
+  --color-text-disabled:   #555555;
+  --color-text-gold:       #C9A227;
+  --color-text-gold-light: #F5D77A;
+  --color-text-red:        #E3242B;
+
+  /* === BORDERS === */
+  --color-border-gold:        rgba(201, 162, 39, 0.45);
+  --color-border-gold-strong: rgba(201, 162, 39, 0.85);
+  --color-border-surface:     rgba(255, 255, 255, 0.07);
+  --color-border-surface-2:   rgba(255, 255, 255, 0.14);
+
+  /* === SEMANTIC ALIASES === */
+  --color-success: var(--color-gold-500);
+  --color-error:   var(--color-red-500);
+  --color-warning: #F0A500;
+}

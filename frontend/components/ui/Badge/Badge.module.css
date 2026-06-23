@@ -1,0 +1,65 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading), sans-serif;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+/* sizes */
+.sm {
+  padding: 2px 8px;
+  font-size: 8px;
+}
+.md {
+  padding: 3px 9px;
+  font-size: var(--font-size-xs);
+}
+.lg {
+  padding: 4px 12px;
+  font-size: var(--font-size-sm);
+}
+
+/* status colors */
+.active {
+  background: rgba(201, 162, 39, 0.12);
+  color: var(--color-text-gold-light);
+  border: 1px solid var(--color-border-gold);
+}
+.expiring {
+  background: rgba(240, 165, 0, 0.12);
+  color: var(--color-warning);
+  border: 1px solid rgba(240, 165, 0, 0.4);
+}
+.expired {
+  background: rgba(227, 36, 43, 0.12);
+  color: var(--color-text-red);
+  border: 1px solid rgba(227, 36, 43, 0.4);
+}
+.inactive {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border-surface);
+}
+.success {
+  background: rgba(201, 162, 39, 0.12);
+  color: var(--color-text-gold);
+  border: 1px solid var(--color-border-gold);
+}
+.info {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border-surface-2);
+}

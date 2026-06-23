@@ -1,0 +1,12 @@
+.stars {
+  display: flex;
+  gap: 1px;
+  font-size: var(--font-size-xs);
+}
+
+.on {
+  color: var(--color-gold-500);
+}
+.off {
+  color: #333;
+}

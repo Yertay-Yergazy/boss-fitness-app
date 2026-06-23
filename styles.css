@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Colors */
+  --color-dark-bg: #0A0A0A;
+  --color-dark-card: #1A1A1A;
+  --color-gold-primary: #C9A227;
+  --color-gold-light: #F5D77A;
+  --color-gold-gradient: linear-gradient(135deg, #C9A227, #F5D77A);
+  --color-red-accent: #C81E1E;
+  --color-text-primary: #E8E8E8;
+  --color-text-secondary: #9A9A9A;
+  
+  /* Typography */
+  --font-display: 'Anton', 'Impact', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.4);
+  --shadow-lg: 0 0 24px rgba(201,162,39,0.4);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; background: var(--color-dark-bg); color: var(--color-text-primary); font-family: var(--font-body); }

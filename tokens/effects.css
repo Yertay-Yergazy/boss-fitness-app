@@ -1,0 +1,37 @@
+/* ============================================================
+   BOSS FITNESS — Effects Tokens
+   Gold glow, shadows, gradients, transitions
+   ============================================================ */
+
+:root {
+  /* === GOLD GLOW SHADOWS === */
+  --shadow-gold-xs: 0 0 6px rgba(201, 162, 39, 0.25);
+  --shadow-gold-sm: 0 0 12px rgba(201, 162, 39, 0.35);
+  --shadow-gold-md: 0 0 20px rgba(201, 162, 39, 0.42), 0 0 40px rgba(201, 162, 39, 0.15);
+  --shadow-gold-lg: 0 0 30px rgba(201, 162, 39, 0.55), 0 0 60px rgba(201, 162, 39, 0.25);
+
+  /* === RED GLOW SHADOWS === */
+  --shadow-red-sm: 0 0 12px rgba(227, 36, 43, 0.35);
+  --shadow-red-md: 0 0 20px rgba(227, 36, 43, 0.45), 0 0 40px rgba(227, 36, 43, 0.2);
+
+  /* === ELEVATION SHADOWS === */
+  --shadow-card:     0 4px 20px rgba(0, 0, 0, 0.5);
+  --shadow-elevated: 0 8px 40px rgba(0, 0, 0, 0.7);
+  --shadow-deep:     0 16px 60px rgba(0, 0, 0, 0.85);
+
+  /* === GRADIENTS === */
+  --gradient-gold:        linear-gradient(135deg, #C9A227 0%, #F5D77A 55%, #C9A227 100%); /* @kind other */
+  --gradient-gold-h:      linear-gradient(90deg,  #C9A227 0%, #F5D77A 100%); /* @kind other */
+  --gradient-gold-v:      linear-gradient(180deg, #F5D77A 0%, #C9A227 100%); /* @kind other */
+  --gradient-red:         linear-gradient(135deg, #C81E1E 0%, #E3242B 100%); /* @kind other */
+  --gradient-bg:          linear-gradient(180deg, #0A0A0A 0%, #121212 100%); /* @kind other */
+  --gradient-surface:     linear-gradient(135deg, #1A1A1A 0%, #222222 100%); /* @kind other */
+  --gradient-fade-up:     linear-gradient(180deg, transparent 0%, rgba(10,10,10,0.95) 100%); /* @kind other */
+  --gradient-fade-right:  linear-gradient(90deg,  transparent 0%, rgba(10,10,10,0.7) 100%); /* @kind other */
+
+  /* === TRANSITIONS === */
+  --transition-fast:   100ms ease-out; /* @kind other */
+  --transition-normal: 200ms ease-out; /* @kind other */
+  --transition-slow:   350ms ease-out; /* @kind other */
+  --transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1); /* @kind other */
+}

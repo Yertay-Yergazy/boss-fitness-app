@@ -1,0 +1,47 @@
+<!-- @dsCard group="Spacing" viewport="700x200" name="Spacing Scale" subtitle="4px base unit — space-1 (4px) through space-24 (96px)" -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { margin:0; background:#0A0A0A; padding:20px 16px; }
+    .items { display:flex; align-items:flex-end; gap:6px; margin-bottom:14px; }
+    .item { display:flex; flex-direction:column; align-items:center; gap:4px; }
+    .bar { background:linear-gradient(180deg,#C9A227,#F5D77A); border-radius:3px; width:28px; }
+    .label { font-family:'Montserrat',sans-serif; font-size:8px; font-weight:600; color:#555; letter-spacing:0.04em; white-space:nowrap; }
+    .divider { height:1px; background:rgba(255,255,255,0.06); margin-bottom:14px; }
+    .tokens { display:flex; flex-wrap:wrap; gap:4px; }
+    .tok { font-family:'Montserrat',sans-serif; font-size:9px; color:#9A9A9A; background:#1A1A1A; border-radius:4px; padding:2px 7px; }
+    .tok span { color:#C9A227; }
+  </style>
+</head>
+<body>
+  <div class="items">
+    <div class="item"><div class="bar" style="height:4px"></div><div class="label">1<br>4px</div></div>
+    <div class="item"><div class="bar" style="height:8px"></div><div class="label">2<br>8px</div></div>
+    <div class="item"><div class="bar" style="height:12px"></div><div class="label">3<br>12px</div></div>
+    <div class="item"><div class="bar" style="height:16px"></div><div class="label">4<br>16px</div></div>
+    <div class="item"><div class="bar" style="height:20px"></div><div class="label">5<br>20px</div></div>
+    <div class="item"><div class="bar" style="height:24px"></div><div class="label">6<br>24px</div></div>
+    <div class="item"><div class="bar" style="height:32px"></div><div class="label">8<br>32px</div></div>
+    <div class="item"><div class="bar" style="height:40px"></div><div class="label">10<br>40px</div></div>
+    <div class="item"><div class="bar" style="height:48px"></div><div class="label">12<br>48px</div></div>
+    <div class="item"><div class="bar" style="height:64px"></div><div class="label">16<br>64px</div></div>
+    <div class="item"><div class="bar" style="height:80px"></div><div class="label">20<br>80px</div></div>
+    <div class="item"><div class="bar" style="height:96px"></div><div class="label">24<br>96px</div></div>
+  </div>
+  <div class="divider"></div>
+  <div class="tokens">
+    <div class="tok">--radius-sm <span>6px</span></div>
+    <div class="tok">--radius-md <span>10px</span></div>
+    <div class="tok">--radius-lg <span>16px</span></div>
+    <div class="tok">--radius-xl <span>20px</span></div>
+    <div class="tok">--radius-2xl <span>24px</span></div>
+    <div class="tok">--radius-full <span>9999px</span></div>
+    <div class="tok">--button-height-md <span>52px</span></div>
+    <div class="tok">--screen-padding <span>20px</span></div>
+    <div class="tok">--tab-bar-height <span>80px</span></div>
+  </div>
+</body>
+</html>

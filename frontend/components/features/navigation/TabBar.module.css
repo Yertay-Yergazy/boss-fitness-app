@@ -1,0 +1,35 @@
+.bar {
+  height: var(--tab-bar-height);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: var(--space-2);
+  padding-bottom: var(--safe-area-bottom);
+  border-top: 1px solid var(--color-border-surface);
+  background: var(--color-bg-base);
+  flex-shrink: 0;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+}
+
+.label {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 9px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.active {
+  color: var(--color-gold-500);
+}
+
+.inactive {
+  color: var(--color-text-muted);
+}
