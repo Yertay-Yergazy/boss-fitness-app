@@ -6,7 +6,9 @@
 function baseUrl(): string {
   const isServer = typeof window === "undefined";
   const url = isServer ? process.env.INTERNAL_API_URL : process.env.NEXT_PUBLIC_API_URL;
-  if (!url) {
+  // Пустая строка — валидное значение: означает "тот же origin" (см. rewrites
+  // в next.config.ts для объединённого фронт+бек контейнера).
+  if (url === undefined) {
     throw new Error(
       isServer ? "INTERNAL_API_URL is not set" : "NEXT_PUBLIC_API_URL is not set",
     );
